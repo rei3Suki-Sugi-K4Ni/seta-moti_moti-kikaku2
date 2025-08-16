@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>座談会サンプル</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  @font-face {
+    font-family: 'YasashisaGothic';
+    src: url('assets/07やさしさゴシック.ttf') format('truetype');
+  }
+  body {
+    font-family: 'YasashisaGothic', sans-serif;
+    background-color: #FAFAF7;
+    margin: 0;
+    padding: 10px;
+  }
+  .top-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  .members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  .member {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px; /* 自己紹介2行に収まるよう小さめ */
+    line-height: 1.2;
+  }
+  .member img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 3px auto;
+  }
+  .topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .topic {
+    background-color: #F5F5F5;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .topic h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .topic p {
+    font-size: 14px;
+    margin: 4px 0;
+    line-height: 1.4;
+    text-indent: 1em; /* ぶら下げインデント */
+  }
+  .topic p::first-line {
+    text-indent: 0; /* 先頭行はインデントなし */
+  }
+  .topic img {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+<img src="assets/top_image.jpg" alt="談笑画像" class="top-image">
+
+<div class="members">
+  <div class="member">
+    <img src="assets/ASMR.jpg" alt="メンバー1">
+    ASMR<br>自己紹介の文章がここに入ります。短く2行。<br>自己紹介の文章がここに入ります。短く2行。
+  </div>
+  <div class="member">
+    <img src="assets/laaco.jpg" alt="メンバー2">
+    laaco<br>自己紹介の文章がここに入ります。短く2行。<br>自己紹介の文章がここに入ります。短く2行。
+  </div>
+  <div class="member">
+    <img src="assets/hotaate.jpg" alt="メンバー3">
+    hotaate<br>自己紹介の文章がここに入ります。短く2行。<br>自己紹介の文章がここに入ります。短く2行。
+  </div>
+  <div class="member">
+    <img src="assets/kani.jpg" alt="メンバー4">
+    kani<br>自己紹介の文章がここに入ります。短く2行。<br>自己紹介の文章がここに入ります。短く2行。
+  </div>
+</div>
+
+<div class="topics">
+  <!-- トピック1 -->
+  <div class="topic">
+    <h4>トピック1：ファンミーティング感想</h4>
+    <p>🧸: めちゃくちゃ楽しかった！最初は緊張したけど、みんなの顔を見たら安心したよ。</p>
+    <p>🐨: わかる！思ったより和やかで、笑いが絶えなかったね。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック2 -->
+  <div class="topic">
+    <h4>トピック2：最近ハマってること</h4>
+    <p>🧸: 最近はカフェ巡りが楽しくて、写真もいっぱい撮ってるんだ。</p>
+    <p>🐨: 写真見せてほしい！インスタにあげてる？</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+    <img src="assets/smartphone_penguin.png" alt="補足画像">
+  </div>
+
+  <!-- トピック3 -->
+  <div class="topic">
+    <h4>トピック3：次回企画について</h4>
+    <p>🧸: 次はもっとカジュアルな雰囲気でもいいかも。</p>
+    <p>🐨: それなら参加しやすくていいね。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック4 -->
+  <div class="topic">
+    <h4>トピック4：自由トーク</h4>
+    <p>🧸: 最近の面白かったことを共有するよ。</p>
+    <p>🐨: ぜひ！</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック5 -->
+  <div class="topic">
+    <h4>トピック5：質問コーナー</h4>
+    <p>🧸: 好きな映画は？</p>
+    <p>🐨: 最近はホラーかな。でもコメディも捨てがたい。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック6 -->
+  <div class="topic">
+    <h4>トピック6：趣味の話</h4>
+    <p>🧸: 最近始めた趣味は？</p>
+    <p>🐨: ヨガと手作りキャンドル。リラックスできるんだ。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック7 -->
+  <div class="topic">
+    <h4>トピック7：旅の思い出</h4>
+    <p>🧸: 旅行で一番印象に残ってる場所は？</p>
+    <p>🐨: 北海道の温泉かな。景色が最高だった。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック8 -->
+  <div class="topic">
+    <h4>トピック8：最近のチャレンジ</h4>
+    <p>🧸: 新しいことに挑戦したことある？</p>
+    <p>🐨: 英語でスピーチをやってみた。緊張したけど楽しかった。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+
+  <!-- トピック9 -->
+  <div class="topic">
+    <h4>トピック9：最後にひとこと</h4>
+    <p>🧸: 今日のファンミ本当に楽しかった！</p>
+    <p>🐨: これからもみんなで楽しもうね。</p>
+    <p>🧸: 会話</p>
+    <p>🐨: 会話</p>
+  </div>
+</div>
+
+</body>
+</html>
